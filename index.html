@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whoami - your.name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="terminal">
+            <div class="terminal-header">
+                <span class="title">portfolio.sh — ssh your.name@github</span>
+                <div class="terminal-controls">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+            </div>
+            
+            <div class="terminal-body">
+                <div class="line">
+                    <span class="prompt">$</span> cat /etc/passwd | grep your.name
+                </div>
+                <div class="line output">
+                    your.name:x:42:42:Backend Developer &amp; DevOps Architect:/home/your.name:/bin/zsh
+                </div>
+                
+                <div class="line">
+                    <span class="prompt">$</span> whoami --bio
+                </div>
+                <div class="line output">
+                    42-year-old backend developer specializing in C, infrastructure,<br>
+                    and DevOps architecture. I build robust systems and automate everything.<br>
+                    Passionate about low-level programming, system design, and keeping servers happy.
+                </div>
+                
+                <div class="line">
+                    <span class="prompt">$</span> ls -la ~/projects/
+                </div>
+                <div class="line output">
+                    <a href="https://github.com/yourusername/project1" target="_blank">drwxr-xr-x  42 your.name  staff  1344 Jan 11 14:23 awesome-c-project</a><br>
+                    <a href="https://github.com/yourusername/project2" target="_blank">drwxr-xr-x  42 your.name  staff  1344 Jan 10 09:17 infrastructure-as-code</a><br>
+                    <a href="https://github.com/yourusername/project3" target="_blank">drwxr-xr-x  42 your.name  staff  1344 Jan 09 16:42 devops-toolkit</a><br>
+                </div>
+                
+                <div class="line">
+                    <span class="prompt">$</span> cat ~/.links
+                </div>
+                <div class="line output">
+                    Blog: <a href="https://yourblog.com" target="_blank">https://yourblog.com</a><br>
+                    YouTube: <a href="https://youtube.com/@yourchannel" target="_blank">@yourchannel</a><br>
+                    Instagram: <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a><br>
+                    Threads: <a href="https://threads.net/@yourhandle" target="_blank">@yourhandle</a><br>
+                </div>
+                
+                <div class="line">
+                    <span class="prompt">$</span> uptime --personal
+                </div>
+                <div class="line output">
+                    42 years, <span id="uptime"></span> days of continuous learning and building
+                </div>
+                
+                <div class="line">
+                    <span class="prompt">$</span> <span class="cursor"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

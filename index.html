@@ -1,73 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[alexia@debian ~$]: cd /home/alexia</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexia Michelle — Backend Developer & Sysadmin</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="terminal">
-            <div class="terminal-header">
-                <span class="title">portfolio.sh — ssh alexia@lexiworks.dev</span>
-                <div class="terminal-controls">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
-                </div>
-            </div>
-            
-            <div class="terminal-body">
-                <div class="line">
-                    <span class="prompt">$</span> grep alexia /etc/passwd
-                </div>
-                <div class="line output">
-                    Alexia:x:42:42:Backend Developer &amp; DevOps Architect:/home/alexia:/bin/bash
-                </div>
-                
-                <div class="line">
-                    <span class="prompt">$</span> whoami --bio
-                </div>
-                <div class="line output">
-                    42-year-old backend developer specializing in C, infrastructure,<br>
-                    and DevOps architecture. I build robust systems and automate everything.<br>
-                    Passionate about low-level programming, system design, and keeping servers happy.
-                </div>
-                
-                <div class="line">
-                    <span class="prompt">$</span> ls -la ~/projects/
-                </div>
-                <div class="line output">
-                    <a href="https://github.com/yourusername/project1" target="_blank">drwxr-xr-x  42 your.name  staff  1344 Jan 11 14:23 kernelinstall</a><br>
-                    <a href="https://github.com/yourusername/project2" target="_blank">drwxr-xr-x  42 your.name  staff  1344 Jan 10 09:17 sslcheck</a><br>
-                    <a href="https://github.com/yourusername/project3" target="_blank">drwxr-xr-x  42 your.name  staff  1344 Jan 09 16:42 systemload</a><br>
-                </div>
-                
-                <div class="line">
-                    <span class="prompt">$</span> cat ~/.links
-                </div>
-                <div class="line output">
-                    Blog: <a href="https://yourblog.com" target="_blank">https://lexi.lat</a><br>
-                    YouTube: <a href="https://youtube.com/@yourchannel" target="_blank">@lachicadesistemas</a><br>
-                    Instagram: <a href="https://instagram.com/yourhandle" target="_blank">@lachicadesistemas</a><br>
-                    Threads: <a href="https://threads.net/@yourhandle" target="_blank">@lachicadesistemas</a><br>
-                </div>
-                
-                <div class="line">
-                    <span class="prompt">$</span> uptime --personal
-                </div>
-                <div class="line output">
-                    42 years, <span id="uptime"></span> days of continuous learning and building all things awesome.
-                </div>
-                
-                <div class="line">
-                    <span class="prompt">$</span> <span class="cursor"></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script src="script.js"></script>
+  <div class="terminal">
+    <header>
+      <div class="profile">
+        <img src="avatar.png" alt="Foto de perfil de Alexia Michelle" class="avatar">
+        <h1>Alexia Michelle</h1>
+        <p class="subtitle">Backend Developer · Sysadmin</p>
+      </div>
+    </header>
+
+    <section class="about">
+      <p>
+        Soy desarrolladora backend especializada en <strong>C</strong> y administradora de sistemas senior
+        en una entidad financiera. Trabajo como <strong>arquitecta DevOps</strong> en proyectos con
+        <em>OpenShift</em>, <em>Ansible</em>, <em>Docker</em> y otras herramientas de automatización.
+        Me apasiona el software libre, el diseño de infraestructura y la curiosidad técnica.
+      </p>
+    </section>
+
+    <section class="projects">
+      <h2>💾 Proyectos</h2>
+      <ul>
+        <li><a href="https://github.com/alexiarstein/kernelinstall" target="_blank">Kernel Installer</a> — herramienta para compilar e instalar el kernel de Linux fácilmente</li>
+        <li><a href="https://github.com/alexiarstein" target="_blank">GoldenDog Linux</a> — mi propia distribución basada en Debian</li>
+      </ul>
+    </section>
+
+    <section class="links">
+      <h2>🌐 Enlaces</h2>
+      <ul>
+        <li><a href="https://github.com/alexiarstein" target="_blank">GitHub</a></li>
+        <li><a href="https://www.youtube.com/@alexiarstein" target="_blank">YouTube</a></li>
+        <li><a href="https://www.instagram.com/alexiarstein" target="_blank">Instagram</a></li>
+        <li><a href="https://www.threads.net/@alexiarstein" target="_blank">Threads</a></li>
+        <li><a href="https://blog.lexi.lat" target="_blank">Blog</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p><span id="prompt">alexia@portfolio:~$</span> echo "Made with 💻 and ☕ on Debian"</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
